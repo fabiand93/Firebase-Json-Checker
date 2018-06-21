@@ -37,4 +37,4 @@ def main():
             print ('Website: '+ requestURL +' is safe')
             print ('Status Code: '+ str(request.status_code))
         i = i+1
-main
+main()
