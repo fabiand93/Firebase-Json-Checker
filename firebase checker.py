@@ -16,7 +16,7 @@ def banner():
 
 def main():
     banner()
-    url = str(input("Insert your project name for being checked: "))
+    url = str(raw_input("Insert your project name for being checked: "))
     requestURL = str('https://'+url+'.firebaseio.com/.json')
     request = requests.get(requestURL)
     if request.status_code == 200:
